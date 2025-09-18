@@ -47,18 +47,15 @@ Meu objetivo é crescer como desenvolvedor, contribuir com soluções eficientes
 ###
 
 <div align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=Rafael072187&hide_title=false&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=gruvbox&locale=pt-br&hide_border=false&order=1" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Rafael072187&locale=pt-br&hide_title=true&layout=compact&card_width=320&langs_count=5&theme=gotham&hide_border=true&hide=jupyter%20notebook&order=2" height="150" alt="languages graph"  />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Rafael072187&radius=16&theme=gotham&area=true&order=5" height="300" alt="activity-graph graph"  />
+  <!-- Estatísticas principais -->
+  <img src="https://github-readme-stats.vercel.app/api?username=Rafael072187&show_icons=true&include_all_commits=true&count_private=true&theme=gruvbox&locale=pt-br&hide_border=false&token=SEU_TOKEN_AQUI" height="150" alt="stats graph" />
+
+  <!-- Linguagens mais usadas (escondendo Jupyter) -->
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Rafael072187&locale=pt-br&hide_title=true&layout=compact&card_width=320&langs_count=5&theme=gotham&hide_border=true&hide=jupyter%20notebook&token=SEU_TOKEN_AQUI" height="150" alt="languages graph" />
+
+  <!-- Gráfico de atividade -->
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Rafael072187&radius=16&theme=gotham&area=true" height="300" alt="activity-graph graph" />
 </div>
-
-###
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rafael072187/Rafael072187/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rafael072187/Rafael072187/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Rafael072187/Rafael072187/output/pacman-contribution-graph.svg">
-</picture>
 
 ###
 
@@ -68,9 +65,9 @@ Meu objetivo é crescer como desenvolvedor, contribuir com soluções eficientes
 
 <div align="left">
   <a href="https://www.linkedin.com/in/rafael-bittencourt-4b735a358" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" height="40" alt="linkedin logo"  />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="40" height="40" alt="linkedin logo" />
   </a>
   <a href="https://github.com/Rafael072187" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/github/default.svg" width="52" height="40" alt="github logo"  />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40" height="40" alt="github logo" />
   </a>
 </div>
