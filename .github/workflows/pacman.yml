@@ -13,9 +13,6 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      # -------------------------------
-      # Pacman Game
-      # -------------------------------
       - name: Generate Pacman files
         uses: Platane/snk@v3
         with:
