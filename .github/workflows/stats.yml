@@ -1,0 +1,15 @@
+name: Update GitHub Stats
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update GitHub stats
+        uses: anuraghazra/github-readme-stats@latest
+        with:
+          token: ${{ secrets.GH_STATS_TOKEN }}
