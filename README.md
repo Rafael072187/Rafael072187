@@ -48,6 +48,17 @@ Meu objetivo é crescer como desenvolvedor, contribuir com soluções eficientes
 
 ---
 
+<h2 align="left">Pacman Game</h2>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rafael072187/Rafael072187/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rafael072187/Rafael072187/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Rafael072187/Rafael072187/output/pacman-contribution-graph.svg">
+</picture>
+
+
+---
+
 <h2 align="left">Social Media</h2>
 
 <div align="left">
