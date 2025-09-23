@@ -1,9 +1,9 @@
-name: Generate Snake Game
+name: Generate Pacman Game
 
 on:
-  schedule: # roda todo dia à meia-noite (UTC)
-    - cron: "0 0 * * *"
-  workflow_dispatch: # permite rodar manualmente pelo GitHub Actions
+  schedule: # roda a cada 12h
+    - cron: "0 */12 * * *"
+  workflow_dispatch: # permite rodar manualmente
 
 jobs:
   build:
@@ -13,7 +13,10 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Generate Snake files
+      # -------------------------------
+      # Pacman Game
+      # -------------------------------
+      - name: Generate Pacman files
         uses: Platane/snk@v3
         with:
           github_user_name: Rafael072187
@@ -21,7 +24,7 @@ jobs:
             dist/pacman-contribution-graph.svg
             dist/pacman-contribution-graph-dark.svg?palette=github-dark
 
-      - name: Deploy to output branch
+      - name: Deploy Pacman Game
         uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: output
