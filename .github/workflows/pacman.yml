@@ -13,14 +13,18 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Copy existing Pacman files
+      - name: Ensure dist folder and copy Pacman SVGs
         run: |
           mkdir -p dist
+          # Se os arquivos estiverem na raiz, mantenha assim:
           cp pacman-contribution-graph.svg dist/
           cp pacman-contribution-graph-dark.svg dist/
+          # Caso estejam em uma pasta, ajuste o caminho, ex:
+          # cp assets/pacman-contribution-graph.svg dist/
+          # cp assets/pacman-contribution-graph-dark.svg dist/
 
       - name: Deploy Pacman Game
-        uses: crazy-max/ghaction-github-pages@v3
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
