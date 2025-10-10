@@ -1,8 +1,8 @@
 name: Generate Pacman Game
 
 on:
-  schedule: # roda a cada 12h
-    - cron: "0 */12 * * *"
+  schedule:
+    - cron: "0 */12 * * *" # roda a cada 12h
   workflow_dispatch: # permite rodar manualmente
 
 jobs:
@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Generate Pacman files
-        uses: abozanona/pacman-contribution-graph@main
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: Rafael072187
           outputs: |
@@ -22,7 +22,7 @@ jobs:
             dist/pacman-contribution-graph-dark.svg?palette=github-dark
 
       - name: Deploy Pacman Game
-        uses: crazy-max/ghaction-github-pages@v2
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
           build_dir: dist
