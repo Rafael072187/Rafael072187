@@ -56,6 +56,9 @@ Meu objetivo é crescer como desenvolvedor, contribuir com soluções eficientes
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Rafael072187/Rafael072187/output/pacman-contribution-graph.svg">
 </picture>
 
+<p><i>_Generated with <a href="https://abozanona.github.io/pacman-contribution-graph/">abozanona/pacman-contribution-graph</a>_</i></p>
+
+
 ---
 
 <h2 align="left">Social Media</h2>
