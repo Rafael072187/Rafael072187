@@ -1,9 +1,9 @@
-name: Generate Pacman Game
+name: Deploy Pacman Game
 
 on:
   schedule:
-    - cron: "0 */12 * * *" # roda a cada 12h
-  workflow_dispatch: # permite rodar manualmente
+    - cron: "0 */12 * * *"  # roda a cada 12h
+  workflow_dispatch:
 
 jobs:
   build:
@@ -13,13 +13,11 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Generate Pacman files
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: Rafael072187
-          outputs: |
-            dist/pacman-contribution-graph.svg
-            dist/pacman-contribution-graph-dark.svg?palette=github-dark
+      - name: Copy existing Pacman files
+        run: |
+          mkdir -p dist
+          cp pacman-contribution-graph.svg dist/
+          cp pacman-contribution-graph-dark.svg dist/
 
       - name: Deploy Pacman Game
         uses: crazy-max/ghaction-github-pages@v3
