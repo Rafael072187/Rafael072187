@@ -41,7 +41,7 @@ Meu objetivo é crescer como desenvolvedor, contribuir com soluções eficientes
 <h2 align="left">Estatísticas</h2>
 
 <div align="left">
-  <!-- Stats principais -->
+  <!-- Estatísticas principais -->
   <img src="https://github-readme-stats.vercel.app/api?username=Rafael072187&show_icons=true&include_all_commits=true&count_private=true&theme=gruvbox&locale=pt-br&hide_border=false&cache_seconds=1800&token=${{ secrets.GH_TOKEN }}" height="150" />
 
   <!-- Linguagens mais usadas -->
