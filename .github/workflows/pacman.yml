@@ -1,30 +1,28 @@
-name: Deploy Pacman Game
+name: Generate Pacman Game
 
 on:
-  schedule:
-    - cron: "0 */12 * * *"  # roda a cada 12h
-  workflow_dispatch:
+  schedule: # roda automaticamente a cada 24h
+    - cron: "0 */24 * * *"
+  workflow_dispatch: # permite rodar manualmente
+  push: # roda em cada push na branch main
+    branches:
+      - main
 
 jobs:
-  build:
+  generate:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
+    timeout-minutes: 5
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - name: Generate pacman-contribution-graph.svg
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: ${{ github.repository_owner }}
 
-      - name: Ensure dist folder and copy Pacman SVGs
-        run: |
-          mkdir -p dist
-          # Se os arquivos estiverem na raiz, mantenha assim:
-          cp pacman-contribution-graph.svg dist/
-          cp pacman-contribution-graph-dark.svg dist/
-          # Caso estejam em uma pasta, ajuste o caminho, ex:
-          # cp assets/pacman-contribution-graph.svg dist/
-          # cp assets/pacman-contribution-graph-dark.svg dist/
-
-      - name: Deploy Pacman Game
-        uses: crazy-max/ghaction-github-pages@v4
+      - name: Push pacman-contribution-graph.svg to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
