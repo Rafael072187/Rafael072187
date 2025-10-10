@@ -1,0 +1,26 @@
+name: Update README with Stats
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"  # atualiza a cada 12h
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Generate README Stats
+        run: |
+          curl -o stats.svg "https://github-readme-stats.vercel.app/api?username=Rafael072187&show_icons=true&include_all_commits=true&count_private=true&theme=gruvbox&locale=pt-br&hide_border=false&cache_seconds=1800&token=${{ secrets.GH_TOKEN }}"
+          curl -o langs.svg "https://github-readme-stats.vercel.app/api/top-langs?username=Rafael072187&locale=pt-br&layout=compact&card_width=320&langs_count=6&theme=gotham&hide_border=true&cache_seconds=1800&token=${{ secrets.GH_TOKEN }}"
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: .
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
