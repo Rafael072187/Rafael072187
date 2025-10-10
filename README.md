@@ -51,7 +51,6 @@ Meu objetivo é crescer como desenvolvedor, contribuir com soluções eficientes
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Rafael072187&radius=16&theme=gotham&area=true&hide_border=true" height="300" />
 </div>
 
-
 ---
 
 <h2 align="left">Pacman Game</h2>
