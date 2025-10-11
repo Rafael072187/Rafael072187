@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -19,15 +19,12 @@ jobs:
       - name: Checkout repositório
         uses: actions/checkout@v4
 
-      - name: Clonar gerador Pacman
-        run: |
-          git clone https://github.com/abozanona/pacman-contribution-graph pacman-generator
-          cd pacman-generator
-          npm install
-          npm run build
-          node dist/index.js --user Rafael072187 --output ../dist
+      - name: Gerar Pacman Contribution Graph
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: Rafael072187
 
-      - name: Verificar geração dos arquivos
+      - name: Verificar arquivos gerados
         run: |
           echo "Conteúdo da pasta dist:"
           ls -l dist
