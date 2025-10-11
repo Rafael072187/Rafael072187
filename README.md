@@ -42,14 +42,14 @@ Meu objetivo é crescer como desenvolvedor, contribuir com soluções eficientes
 
 <div align="left">
   <!-- Estatísticas principais -->
-  <img src="https://github-readme-stats.vercel.app/api?username=Rafael072187&show_icons=true&include_all_commits=true&count_private=true&theme=gruvbox&locale=pt-br&hide_border=false&cache_seconds=1800&token=${{ secrets.GH_TOKEN }}" height="150" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Rafael072187&show_icons=true&count_private=true&include_all_commits=true&theme=gruvbox&locale=pt-br&hide_border=false&cache_seconds=1800&token=GH_STATS_TOKEN" height="150" />
 
   <!-- Linguagens mais usadas -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Rafael072187&locale=pt-br&hide_title=true&layout=compact&card_width=320&langs_count=6&theme=gotham&hide_border=true&cache_seconds=1800&token=${{ secrets.GH_TOKEN }}" height="150" />
-
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Rafael072187&layout=compact&card_width=320&langs_count=6&theme=gotham&hide_border=true&hide=Jupyter%20Notebook&cache_seconds=1800&token=GH_STATS_TOKEN" height="150" />
   <!-- Gráfico de atividade -->
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Rafael072187&radius=16&theme=gotham&area=true&hide_border=true" height="300" />
 </div>
+
 
 ---
 
