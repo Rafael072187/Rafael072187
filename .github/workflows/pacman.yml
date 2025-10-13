@@ -2,35 +2,34 @@ name: Deploy Pacman Game (robusto)
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  # roda a cada 12 horas
+    - cron: "0 */12 * * *"  # roda a cada 12h
   workflow_dispatch:
-  push:
-    branches:
-      - main
 
 jobs:
-  generate:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    timeout-minutes: 5
 
     steps:
-      - name: Checkout repositório
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Gerar Pacman Contribution Graph
-        uses: abozanona/pacman-contribution-graph@main
-        with:
-          github_user_name: Rafael072187
-
-      - name: Verificar arquivos gerados
+      - name: Clonar gerador Pacman
         run: |
-          echo "Conteúdo da pasta dist:"
-          ls -l dist
+          git clone https://github.com/abozanona/pacman-contribution-graph pacman-generator
+          cd pacman-generator
+          npm install
+          npm run build || true
+          cd ..
 
-      - name: Publicar SVGs na branch output
-        uses: crazy-max/ghaction-github-pages@v3
+      - name: Gerar Pacman Graph
+        run: |
+          mkdir -p dist
+          node pacman-generator/dist/pacman-contribution-graph.min.js Rafael072187 || echo "Gerando pacman manualmente..."
+          cp pacman-generator/dist/pacman-contribution-graph.svg dist/
+          cp pacman-generator/dist/pacman-contribution-graph-dark.svg dist/
+
+      - name: Publicar no branch output
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
