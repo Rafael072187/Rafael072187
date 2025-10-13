@@ -2,35 +2,42 @@ name: Deploy Pacman Game (robusto)
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  # roda a cada 12h
+    - cron: "0 */12 * * *"  # roda a cada 12 horas
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
-  build:
+  generate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 5
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repositório
         uses: actions/checkout@v4
 
-      - name: Gerar Pacman Graph
+      - name: Gerar Pacman Contribution Graph
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: Rafael072187
+
+      - name: Corrigir diretório dist (se necessário)
         run: |
           mkdir -p dist
-          cd pacman-generator
-          node --input-type=module -e "
-            import pkg from './dist/pacman-contribution-graph.min.js';
-            import fs from 'fs';
-            const light = pkg.generate('Rafael072187', { theme: 'light' });
-            const dark = pkg.generate('Rafael072187', { theme: 'dark' });
-            fs.mkdirSync('../dist', { recursive: true });
-            fs.writeFileSync('../dist/pacman-contribution-graph.svg', light);
-            fs.writeFileSync('../dist/pacman-contribution-graph-dark.svg', dark);
-          "
-          cd ..
+          if [ -f pacman-contribution-graph.svg ]; then
+            mv pacman-contribution-graph.svg dist/ || true
+          fi
+          if [ -f pacman-contribution-graph-dark.svg ]; then
+            mv pacman-contribution-graph-dark.svg dist/ || true
+          fi
+          echo "Arquivos prontos para deploy:"
+          ls -l dist || echo "⚠️ Nenhum SVG encontrado — verifique se a Action gerou corretamente."
 
-
-      - name: Publicar no branch output
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+      - name: Publicar SVGs na branch output
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
           build_dir: dist
