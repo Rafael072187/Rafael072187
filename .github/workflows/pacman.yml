@@ -13,20 +13,23 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Clonar gerador Pacman
+      - name: Instalar dependências e gerar Pacman
         run: |
           git clone https://github.com/abozanona/pacman-contribution-graph pacman-generator
           cd pacman-generator
           npm install
-          npm run build || true
-          cd ..
+          npm run build
 
-      - name: Gerar Pacman Graph
-        run: |
-          mkdir -p dist
-          node pacman-generator/dist/pacman-contribution-graph.min.js Rafael072187 || echo "Gerando pacman manualmente..."
-          cp pacman-generator/dist/pacman-contribution-graph.svg dist/
-          cp pacman-generator/dist/pacman-contribution-graph-dark.svg dist/
+          echo "🔧 Gerando SVGs do Pacman..."
+          node --input-type=module -e "
+            import { generate } from './dist/pacman-contribution-graph.min.js';
+            import fs from 'fs';
+            const light = generate('Rafael072187', { theme: 'light' });
+            const dark = generate('Rafael072187', { theme: 'dark' });
+            fs.mkdirSync('../dist', { recursive: true });
+            fs.writeFileSync('../dist/pacman-contribution-graph.svg', light);
+            fs.writeFileSync('../dist/pacman-contribution-graph-dark.svg', dark);
+          "
 
       - name: Publicar no branch output
         uses: crazy-max/ghaction-github-pages@v3.1.0
