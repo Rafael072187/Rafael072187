@@ -19,6 +19,9 @@ jobs:
       - name: Checkout repositório
         uses: actions/checkout@v4
 
+      - name: Clonar repositório do gerador Pacman
+        run: git clone https://github.com/abozanona/pacman-contribution-graph pacman-generator
+
       - name: Gerar Pacman Contribution Graph
         uses: abozanona/pacman-contribution-graph@main
         with:
@@ -27,6 +30,12 @@ jobs:
       - name: Corrigir diretório dist (se necessário)
         run: |
           mkdir -p dist
+          if [ -f pacman-generator/pacman-contribution-graph.svg ]; then
+            mv pacman-generator/pacman-contribution-graph.svg dist/ || true
+          fi
+          if [ -f pacman-generator/pacman-contribution-graph-dark.svg ]; then
+            mv pacman-generator/pacman-contribution-graph-dark.svg dist/ || true
+          fi
           if [ -f pacman-contribution-graph.svg ]; then
             mv pacman-contribution-graph.svg dist/ || true
           fi
