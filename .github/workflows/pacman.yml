@@ -1,49 +1,58 @@
-name: Deploy Pacman Game (robusto)
+name: Deploy Pacman Game (estável)
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  # roda a cada 12 horas
+    - cron: "0 */12 * * *"
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    timeout-minutes: 5
+    timeout-minutes: 10
 
     steps:
       - name: Checkout repositório
         uses: actions/checkout@v4
 
-      - name: Clonar repositório do gerador Pacman
+      - name: Limpar diretórios antigos
+        run: rm -rf pacman-generator dist || true
+
+      - name: Clonar gerador Pacman
         run: git clone https://github.com/abozanona/pacman-contribution-graph pacman-generator
 
-      - name: Gerar Pacman Contribution Graph
-        uses: abozanona/pacman-contribution-graph@main
-        with:
-          github_user_name: Rafael072187
+      - name: Instalar dependências e compilar
+        run: |
+          cd pacman-generator
+          npm ci
+          npm run build
+          cd ..
 
-      - name: Corrigir diretório dist (se necessário)
+      - name: Gerar SVGs do Pacman (estável)
         run: |
           mkdir -p dist
-          if [ -f pacman-generator/pacman-contribution-graph.svg ]; then
-            mv pacman-generator/pacman-contribution-graph.svg dist/ || true
-          fi
-          if [ -f pacman-generator/pacman-contribution-graph-dark.svg ]; then
-            mv pacman-generator/pacman-contribution-graph-dark.svg dist/ || true
-          fi
-          if [ -f pacman-contribution-graph.svg ]; then
-            mv pacman-contribution-graph.svg dist/ || true
-          fi
-          if [ -f pacman-contribution-graph-dark.svg ]; then
-            mv pacman-contribution-graph-dark.svg dist/ || true
-          fi
-          echo "Arquivos prontos para deploy:"
-          ls -l dist || echo "⚠️ Nenhum SVG encontrado — verifique se a Action gerou corretamente."
+          cd pacman-generator
+          node --input-type=module -e "
+            import fs from 'fs';
+            import pkg from './dist/pacman-contribution-graph.min.js';
+            const { generate } = pkg;
+            const opts = { width: 900, height: 180, theme: 'light' };
+            const light = generate('Rafael072187', opts);
+            const dark = generate('Rafael072187', { ...opts, theme: 'dark' });
+            fs.writeFileSync('../dist/pacman-contribution-graph.svg', light);
+            fs.writeFileSync('../dist/pacman-contribution-graph-dark.svg', dark);
+          "
+          cd ..
+
+      - name: Verificar arquivos gerados
+        run: |
+          echo "Arquivos gerados:"
+          ls -lh dist
+          echo "Preview SVG:"
+          head -n 10 dist/pacman-contribution-graph.svg || true
 
       - name: Publicar SVGs na branch output
         uses: crazy-max/ghaction-github-pages@v3
