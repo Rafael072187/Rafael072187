@@ -2,7 +2,7 @@ name: Deploy Pacman Game (final)
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 */12 * * *" # roda a cada 12h
   workflow_dispatch:
   push:
     branches: [main]
@@ -18,34 +18,23 @@ jobs:
       - name: Checkout repositório
         uses: actions/checkout@v4
 
-      - name: Limpar diretórios antigos
-        run: rm -rf pacman-generator dist || true
+      - name: Gerar Pacman SVGs (action oficial)
+        uses: abozanona/pacman-contribution-graph@main
+        with:
+          github_user_name: Rafael072187
+          width: 900
+          height: 180
+          theme_name: default
 
-      - name: Clonar gerador Pacman
-        run: git clone https://github.com/abozanona/pacman-contribution-graph pacman-generator
-
-      - name: Instalar dependências e compilar
-        run: |
-          cd pacman-generator
-          npm install --legacy-peer-deps
-          npm run build
-          cd ..
-
-      - name: Gerar SVGs via CLI (modo compatível)
+      - name: Criar pasta dist e mover SVGs
         run: |
           mkdir -p dist
-          cd pacman-generator
-          node ./src/cli.js Rafael072187 --width 900 --height 180 --theme light > ../dist/pacman-contribution-graph.svg
-          node ./src/cli.js Rafael072187 --width 900 --height 180 --theme dark > ../dist/pacman-contribution-graph-dark.svg
-          cd ..
+          mv pacman-contribution-graph.svg dist/ || true
+          mv pacman-contribution-graph-dark.svg dist/ || true
+          echo "Arquivos prontos:"
+          ls -lh dist
 
-      - name: Verificar arquivos gerados
-        run: |
-          echo "Arquivos gerados:"
-          ls -lh dist || echo "⚠️ Nenhum SVG encontrado"
-          head -n 10 dist/pacman-contribution-graph.svg || true
-
-      - name: Publicar SVGs na branch output
+      - name: Publicar na branch output
         uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
