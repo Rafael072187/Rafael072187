@@ -1,17 +1,22 @@
 <h2 align="left">Sobre mim</h2>
 
 <p align="left">
-Olá, meu nome é <b>Rafael Bittencourt</b>, sou <b>desenvolvedor Python</b> com foco em <b>automação de processos, APIs REST e análise de dados</b>.  
-Desde 2024 venho construindo projetos práticos que envolvem coleta, organização e visualização de informações.  
+Olá! Sou <b>Rafael Bittencourt</b>, desenvolvedor <b>Python</b> apaixonado por transformar ideias em soluções práticas.  
+Tenho foco em <b>automação de processos</b>, <b>criação de APIs</b> e <b>integração de sistemas</b>, sempre buscando deixar o trabalho mais simples e eficiente com o poder do <b>Python</b> e do <b>n8n</b>.  
 </p>
 
 <p align="left">
-No meu dia a dia gosto de transformar tarefas repetitivas em fluxos automatizados, desenvolver APIs funcionais e explorar dados para gerar insights.  
-Já trabalhei em projetos pessoais e autônomos utilizando <b>FastAPI, Django, Pandas, Numpy, Selenium, Matplotlib, Seaborn, Pytest e Git</b>.  
+Gosto de explorar novas formas de automatizar tarefas, conectar aplicações e analisar dados para gerar valor de verdade.  
+Desde 2024, venho aplicando essas habilidades em projetos próprios e freelance, criando fluxos inteligentes e APIs que realmente resolvem problemas do dia a dia.  
 </p>
 
 <p align="left">
-Meu objetivo é crescer como desenvolvedor, contribuir com soluções eficientes e continuar evoluindo em equipes que buscam inovação e impacto real.  
+Trabalho com ferramentas como <b>FastAPI</b>, <b>Django</b>, <b>Pandas</b>, <b>Numpy</b>, <b>Selenium</b>, <b>Matplotlib</b> e <b>Seaborn</b>, além de usar <b>Docker</b>, <b>Git</b> e <b>AWS</b> para dar mais estrutura aos projetos.  
+</p>
+
+<p align="left">
+Acredito que programar vai muito além de escrever código — é entender o problema, encontrar o caminho mais limpo e fazer a tecnologia trabalhar a nosso favor.  
+Meu objetivo é continuar evoluindo como desenvolvedor e contribuir para projetos que unam <b>tecnologia, eficiência e impacto real</b>.  
 </p>
 
 ---
@@ -19,21 +24,20 @@ Meu objetivo é crescer como desenvolvedor, contribuir com soluções eficientes
 <h2 align="left">Techs</h2>
 
 <div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="Python" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" height="40" alt="FastAPI" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" height="40" alt="Django" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" height="40" alt="NumPy" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" height="40" alt="Pandas" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" alt="Docker" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="40" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="VS Code" />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" />
 </div>
 
 ---
@@ -41,15 +45,10 @@ Meu objetivo é crescer como desenvolvedor, contribuir com soluções eficientes
 <h2 align="left">Estatísticas</h2>
 
 <div align="left">
-  <!-- Estatísticas principais -->
   <img src="https://github-readme-stats.vercel.app/api?username=Rafael072187&show_icons=true&count_private=true&include_all_commits=true&theme=gruvbox&locale=pt-br&hide_border=false&cache_seconds=1800&token=GH_STATS_TOKEN" height="150" />
-
-  <!-- Linguagens mais usadas -->
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Rafael072187&layout=compact&card_width=320&langs_count=6&theme=gotham&hide_border=true&hide=Jupyter%20Notebook&cache_seconds=1800&token=GH_STATS_TOKEN" height="150" />
-  <!-- Gráfico de atividade -->
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Rafael072187&radius=16&theme=gotham&area=true&hide_border=true" height="300" />
 </div>
-
 
 ---
 
@@ -62,7 +61,6 @@ Meu objetivo é crescer como desenvolvedor, contribuir com soluções eficientes
 </picture>
 
 <p><i>_Generated with <a href="https://abozanona.github.io/pacman-contribution-graph/">abozanona/pacman-contribution-graph</a>_</i></p>
-
 
 ---
 
