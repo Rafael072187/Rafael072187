@@ -1,4 +1,4 @@
-name: Deploy Pacman Game (robusto)
+name: Deploy Pacman Game (final)
 
 on:
   schedule:
@@ -24,29 +24,20 @@ jobs:
       - name: Clonar gerador Pacman
         run: git clone https://github.com/abozanona/pacman-contribution-graph pacman-generator
 
-      - name: Instalar dependências e compilar (modo seguro)
+      - name: Instalar dependências e compilar
         run: |
           cd pacman-generator
           npm install --legacy-peer-deps
           npm run build
           cd ..
 
-      - name: Gerar SVGs do Pacman
+      - name: Gerar SVGs via CLI (modo compatível)
         run: |
           mkdir -p dist
           cd pacman-generator
-          node -e "
-            const fs = require('fs');
-            const pkg = require('./dist/pacman-contribution-graph.min.js');
-            const generate = pkg.generate || pkg.default;
-            const opts = { width: 900, height: 180, theme: 'light' };
-            const light = generate('Rafael072187', opts);
-            const dark = generate('Rafael072187', { ...opts, theme: 'dark' });
-            fs.writeFileSync('../dist/pacman-contribution-graph.svg', light);
-            fs.writeFileSync('../dist/pacman-contribution-graph-dark.svg', dark);
-          "
+          node ./src/cli.js Rafael072187 --width 900 --height 180 --theme light > ../dist/pacman-contribution-graph.svg
+          node ./src/cli.js Rafael072187 --width 900 --height 180 --theme dark > ../dist/pacman-contribution-graph-dark.svg
           cd ..
-
 
       - name: Verificar arquivos gerados
         run: |
