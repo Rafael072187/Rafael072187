@@ -35,10 +35,10 @@ jobs:
         run: |
           mkdir -p dist
           cd pacman-generator
-          node --input-type=module -e "
-            import fs from 'fs';
-            import pkg from './dist/pacman-contribution-graph.min.js';
-            const { generate } = pkg;
+          node -e "
+            const fs = require('fs');
+            const pkg = require('./dist/pacman-contribution-graph.min.js');
+            const generate = pkg.generate || pkg.default;
             const opts = { width: 900, height: 180, theme: 'light' };
             const light = generate('Rafael072187', opts);
             const dark = generate('Rafael072187', { ...opts, theme: 'dark' });
@@ -46,6 +46,7 @@ jobs:
             fs.writeFileSync('../dist/pacman-contribution-graph-dark.svg', dark);
           "
           cd ..
+
 
       - name: Verificar arquivos gerados
         run: |
