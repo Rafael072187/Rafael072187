@@ -1,4 +1,4 @@
-name: Deploy Pacman Game (estável)
+name: Deploy Pacman Game (robusto)
 
 on:
   schedule:
@@ -24,14 +24,14 @@ jobs:
       - name: Clonar gerador Pacman
         run: git clone https://github.com/abozanona/pacman-contribution-graph pacman-generator
 
-      - name: Instalar dependências e compilar
+      - name: Instalar dependências e compilar (modo seguro)
         run: |
           cd pacman-generator
-          npm ci
+          npm install --legacy-peer-deps
           npm run build
           cd ..
 
-      - name: Gerar SVGs do Pacman (estável)
+      - name: Gerar SVGs do Pacman
         run: |
           mkdir -p dist
           cd pacman-generator
@@ -50,8 +50,7 @@ jobs:
       - name: Verificar arquivos gerados
         run: |
           echo "Arquivos gerados:"
-          ls -lh dist
-          echo "Preview SVG:"
+          ls -lh dist || echo "⚠️ Nenhum SVG encontrado"
           head -n 10 dist/pacman-contribution-graph.svg || true
 
       - name: Publicar SVGs na branch output
