@@ -45,10 +45,25 @@ Meu objetivo é continuar evoluindo como desenvolvedor e contribuir para projeto
 <h2 align="left">Estatísticas</h2>
 
 <div align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=Rafael072187&show_icons=true&count_private=true&include_all_commits=true&theme=gruvbox&locale=pt-br&hide_border=false&cache_seconds=1800&token=GH_STATS_TOKEN" height="150" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Rafael072187&layout=compact&card_width=320&langs_count=6&theme=gotham&hide_border=true&hide=Jupyter%20Notebook&cache_seconds=1800&token=GH_STATS_TOKEN" height="150" />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Rafael072187&radius=16&theme=gotham&area=true&hide_border=true" height="300" />
+  <!-- Stats (versão estável) -->
+  <img 
+       src="https://github-readme-stats.vercel.app/api?username=Rafael072187&show_icons=true&theme=gruvbox"
+       height="150"
+  />
+
+  <!-- Top languages -->
+  <img 
+       src="https://github-readme-stats.vercel.app/api/top-langs?username=Rafael072187&layout=compact&langs_count=6&theme=gotham&hide_border=true&hide=Jupyter%20Notebook"
+       height="150"
+  />
+
+  <!-- Contribution graph -->
+  <img 
+       src="https://github-readme-activity-graph.vercel.app/graph?username=Rafael072187&radius=16&theme=gotham&area=true&hide_border=true"
+       height="300"
+  />
 </div>
+
 
 ---
 
