@@ -42,15 +42,13 @@ Meu objetivo é continuar evoluindo como desenvolvedor e contribuir para projeto
 
 ---
 
-<h2 align="left">Pacman Game</h2>
+<h2 align="left">Snake Game</h2>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rafael072187/Rafael072187/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rafael072187/Rafael072187/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Rafael072187/Rafael072187/output/pacman-contribution-graph.svg">
-</picture>
+<div align="center">
+  
+![snake gif](https://github.com/Rafael072187/Rafael072187/blob/output/github-snake-dark.svg)
 
-<p><i>_Generated with <a href="https://abozanona.github.io/pacman-contribution-graph/">abozanona/pacman-contribution-graph</a>_</i></p>
+</div>
 
 ---
 
@@ -63,4 +61,11 @@ Meu objetivo é continuar evoluindo como desenvolvedor e contribuir para projeto
   <a href="https://github.com/Rafael072187" target="_blank">
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40" height="40" />
   </a>
+</div>
+<hr>  
+
+<div align="left">
+  
+![Contador de Visitas](https://web-production-profile-views.up.railway.app/count.svg?user=Rafael072187&color=green&width=140&height=28)
+
 </div>
