@@ -10,7 +10,17 @@ Gosto de explorar novas formas de automatizar tarefas, conectar aplicações e a
 Acredito que programar vai muito além de escrever código — é entender o problema, encontrar o caminho mais limpo e fazer a tecnologia trabalhar a nosso favor. Meu objetivo é continuar evoluindo como desenvolvedor e contribuir para projetos que unam tecnologia, eficiência e impacto real.
 
 ## Contact Me
-<p><a href="www.linkedin.com/in/rafael-bittencourt-4b735a358" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a> </p>
+<p>
+  <a
+    href="https://www.linkedin.com/in/rafael-bittencourt-4b735a358"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="Perfil do Rafael Bittencourt no LinkedIn"
+    aria-label="Abrir perfil do Rafael Bittencourt no LinkedIn em nova aba"
+  >
+    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn — Rafael Bittencourt">
+  </a>
+</p>
 
 ## Skills
 
