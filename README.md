@@ -114,6 +114,6 @@ Fluxo automatizado que lê artigos de uma planilha do Google Sheets, gera resumo
 
 <div align="left">
   
-![Contador de Visitas](https://web-production-profile-views.up.railway.app/count.svg?user=Rafael072187&color=green&width=140&height=28)
+![Contador de Visitas](https://komarev.com/ghpvc/?username=your-github-Rafael072187&color=blue&style=plastic)
 
 </div>
