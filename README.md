@@ -1,119 +1,104 @@
-<h2 align="left">Sobre mim</h2>
-
-# Olá 👋, Meu nome é Rafael Bittencourt
-### Desenvolvedor Python | Automação de Processos | APIs REST | Análise de Dados | N8N
-
-Sou um desenvolvedor Python apaixonado por transformar ideias em soluções práticas. Tenho foco em automação de processos, criação de APIs e integração de sistemas, sempre buscando deixar o trabalho mais simples e eficiente com o poder do Python e do n8n.
-
-Gosto de explorar novas formas de automatizar tarefas, conectar aplicações e analisar dados para gerar valor de verdade. Desde 2024, venho aplicando essas habilidades em projetos próprios e freelance, criando fluxos inteligentes e APIs que realmente resolvem problemas do dia a dia.
-
-Acredito que programar vai muito além de escrever código — é entender o problema, encontrar o caminho mais limpo e fazer a tecnologia trabalhar a nosso favor. Meu objetivo é continuar evoluindo como desenvolvedor e contribuir para projetos que unam tecnologia, eficiência e impacto real.
-
-## Contact Me
-<p>
-  <a
-    href="https://www.linkedin.com/in/rafael-bittencourt-4b735a358"
-    target="_blank"
-    rel="noopener noreferrer"
-    title="Perfil do Rafael Bittencourt no LinkedIn"
-    aria-label="Abrir perfil do Rafael Bittencourt no LinkedIn em nova aba"
-  >
-    <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?&style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn — Rafael Bittencourt">
-  </a>
-</p>
-
-## Skills
-
-<p>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" align="left"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python" width="40" height="40" align="left"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="mysql" width="40" height="40" align="left"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="postgresql" width="40" height="40" align="left"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="firebase" width="40" height="40" align="left"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="selenium" width="40" height="40" align="left"/>&nbsp;
-  <img src="https://n8n.io/brandguidelines/logo-dark.svg" alt="n8n" width="40" height="40" align="left"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40" align="left"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="numpy" width="40" height="40" align="left"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="matplotlib" width="40" height="40" align="left"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" width="40" height="40" align="left"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="git" width="40" height="40" align="left"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="docker" width="40" height="40" align="left"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="flask" width="40" height="40" align="left"/>&nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="graphql" width="40" height="40"/>&nbsp;
-</p>
-
----
-
-## Projects
-
-### 📊 Dashboard de Ações - IBOVESPA
-
-Aplicação interativa desenvolvida em Streamlit para analisar e visualizar a evolução de preços das ações da B3, calcular performance individual e da carteira, e aplicar filtros personalizados de data.
-
-[View Project](https://github.com/Rafael072187/Dashboard)
-
----
-
-### 🕹️ Projeto FlappyBird (Pygame + modo IA)
-
-Implementação do Flappy Bird em Python com Pygame, incluindo um modo de experimento com algoritmo genético para jogar automaticamente.
-
-[View Project](https://github.com/Rafael072187/Projeto_FlappyBird)
-
----
-
-### 🛒 Ecommerce Completo com Django
-
-Aplicação de comércio eletrônico construída com Django, com catálogo, carrinho, checkout e área administrativa.
-
-[View Project](https://github.com/Rafael072187/Ecommerce_Completo_com_Django)
-
----
-
-### 💬 Agente de Atendimento no WhatsApp
-
-Agente conversacional inteligente no n8n integrado ao WhatsApp, capaz de compreender, responder e manter contexto em interações com usuários.
-
-[View Project](https://github.com/Rafael072187/Agente_de_Atendimento_no_Whatsapp)
-
----
-
-### 🤖 Agente N8N RAG para Atendimento por E-mail
-
-Agente automatizado de atendimento via e-mail que combina IA conversacional com arquitetura RAG (Retrieval-Augmented Generation).
-
-[View Project](https://github.com/Rafael072187/Agente_N8N_RAG_para_Atendimento_por_E-mail)
-
----
-
-### 🏠 Previsão de Preços Airbnb — Aplicação em Streamlit
-
-Este projeto implementa uma aplicação interativa em Streamlit que permite prever o valor de imóveis listados no Airbnb, com base em características do imóvel, do anfitrião e das condições de reserva. O modelo de Machine Learning foi previamente treinado e está disponível no arquivo modelo.joblib.
-
-[View Project](https://github.com/Rafael072187/CienciaDeDados)
-
----
-
-### 📰 Automação de Resumos de Artigos com n8n
-
-Fluxo automatizado que lê artigos de uma planilha do Google Sheets, gera resumos com IA e envia por e-mail — tudo sem intervenção humana.
-
-[View Project](https://github.com/Rafael072187/Automacao_de_Resumos_de_Artigos_com_n8n)
-
----
-
-<h2 align="left">Snake Game</h2>
-
 <div align="center">
-  
-![snake gif](https://github.com/Rafael072187/Rafael072187/blob/output/github-snake-dark.svg)
+
+<h1>Rafael Bittencourt de Araújo</h1>
+
+<p><b>Desenvolvedor Python</b> · automação de processos · integrações · agentes de IA</p>
+
+<p>
+  <a href="https://www.linkedin.com/in/rafael-bittencourt-4b735a358" title="LinkedIn">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://github.com/Rafael072187?tab=repositories" title="Repositórios">
+    <img src="https://img.shields.io/badge/Reposit%C3%B3rios-181717?style=flat-square&logo=github&logoColor=white" alt="Repositórios">
+  </a>
+  <img src="https://img.shields.io/badge/Brasil-009C3B?style=flat-square&logo=googlemaps&logoColor=white" alt="Brasil">
+</p>
 
 </div>
 
 ---
 
-<div align="left">
-  
-![Contador de Visitas](https://komarev.com/ghpvc/?username=your-github-Rafael072187&color=blue&style=plastic)
+## Sobre mim
 
+Sou desenvolvedor Python. Meu trabalho é tirar tarefa manual do caminho das pessoas. Na prática isso vira automação de planilha e relatório, coleta de dados de site que não tem API, integração entre sistemas que não conversam e agentes de IA atendendo no WhatsApp, no e-mail ou no Telegram.
+
+Comecei em 2024, entre projetos próprios e freelances. Aprendi resolvendo problema real: peguei a tarefa chata, automatizei, publiquei, e a próxima ficou mais fácil. Quase tudo que está no meu GitHub nasceu assim — de uma necessidade concreta, não de tutorial.
+
+No dia a dia eu trabalho com vibe coding: uso IA para chegar rápido na primeira versão, testar hipóteses e explorar bibliotecas que eu ainda não conhecia. O que eu não terceirizo é o julgamento — decidir o que entra, ler o que voltou, tratar o erro, escrever o teste e assumir a manutenção. Protótipo em uma tarde é fácil; o que entrega valor é o que continua de pé três meses depois.
+
+Me interessa o resultado, não a ferramenta da moda: menos clique, menos erro de digitação, menos gente esperando resposta. Se o problema pede Python, uso Python. Se pede n8n, uso n8n. Se pede um script de 40 linhas e não um sistema, é isso que eu entrego.
+
+Aberto a freelance e a conversar sobre automação, dados e agentes de IA.
+
+---
+
+## Stack
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=py,js,django,flask,fastapi,docker,git,github,mysql,postgres,firebase,selenium,linux,bash&theme=dark&perline=7" alt="Python, JavaScript, Django, Flask, FastAPI, Docker, Git, GitHub, MySQL, PostgreSQL, Firebase, Selenium, Linux, Bash">
+
+<br><br>
+
+<img src="https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white" alt="n8n">
+<img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white" alt="Streamlit">
+<img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas">
+<img src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white" alt="Selenium">
+<img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" alt="Playwright">
+
+</div>
+
+---
+
+## Projetos
+
+| Projeto | O que resolve | Stack |
+| --- | --- | --- |
+| **[Pesquisa de Preços](https://github.com/Rafael072187/Pesquisa-de-precos)** | Coleta preço, parcelamento, link e imagem em Mercado Livre, Buscapé e Amazon, e entrega planilha pronta com filtro de termos e faixa de preço. | Python · Selenium · openpyxl |
+| **[Baixa Música YouTube](https://github.com/Rafael072187/Baixa_musica_Youtube)** | App desktop para baixar vídeo e áudio do YouTube, com progresso em tempo real, cancelamento e organização automática em pastas. | Python · Tkinter · yt-dlp |
+| **[Agente de Atendimento no WhatsApp](https://github.com/Rafael072187/Agente_de_Atendimento_no_Whatsapp)** | Agente conversacional que entende a mensagem, responde com contexto e mantém a conversa no WhatsApp. | n8n · IA · WhatsApp API |
+| **[Agente RAG por E-mail](https://github.com/Rafael072187/Agente_N8N_RAG_para_Atendimento_por_E-mail)** | Atendimento automático por e-mail com recuperação de contexto em base própria, em vez de resposta genérica. | n8n · RAG · IA |
+| **[FlappyBird com algoritmo genético](https://github.com/Rafael072187/Projeto_FlappyBird)** | O jogo em Pygame com um modo em que a IA aprende a jogar sozinha por seleção de gerações. | Python · Pygame · genético |
+| **[Dashboard B3](https://github.com/Rafael072187/Dashboard)** | Análise das ações do IBOVESPA com performance individual e da carteira, filtro de período e visualização interativa. | Python · Streamlit · pandas |
+| **[E-commerce com Django](https://github.com/Rafael072187/Ecommerce_Completo_com_Django)** | Loja completa com catálogo, carrinho, checkout e área administrativa. | Django · HTML · SQLite |
+
+<sub>Os outros repositórios estão em <a href="https://github.com/Rafael072187?tab=repositories">github.com/Rafael072187</a>.</sub>
+
+---
+
+## Contribuições
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rafael072187/Rafael072187/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rafael072187/Rafael072187/output/github-snake.svg">
+  <img alt="Contribuições dos últimos meses" src="https://raw.githubusercontent.com/Rafael072187/Rafael072187/output/github-snake.svg">
+</picture>
+
+</div>
+
+---
+
+## Contato
+
+<div align="center">
+
+<a href="https://www.linkedin.com/in/rafael-bittencourt-4b735a358">
+  <img src="https://img.shields.io/badge/LinkedIn-Rafael%20Bittencourt-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>
+<a href="https://github.com/Rafael072187">
+  <img src="https://img.shields.io/badge/GitHub-Rafael072187-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+</a>
+
+<br><br>
+
+<sub>Aberto a freelance e a conversar sobre automação, dados e agentes de IA.</sub>
+
+</div>
+
+---
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=Rafael072187&label=visitas&color=0b5fff&style=flat-square" alt="Visitas no perfil">
 </div>
