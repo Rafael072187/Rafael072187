@@ -20,15 +20,15 @@
 
 ## Sobre mim
 
-Sou desenvolvedor Python. Meu trabalho é tirar tarefa manual do caminho das pessoas. Na prática isso vira automação de planilha e relatório, coleta de dados de site que não tem API, integração entre sistemas que não conversam e agentes de IA atendendo no WhatsApp, no e-mail ou no Telegram.
+Sou desenvolvedor Python. Meu trabalho é tirar tarefa manual do caminho das pessoas.
 
-Comecei em 2024, entre projetos próprios e freelances. Aprendi resolvendo problema real: peguei a tarefa chata, automatizei, publiquei, e a próxima ficou mais fácil. Quase tudo que está no meu GitHub nasceu assim — de uma necessidade concreta, não de tutorial.
+Na prática isso vira automação de planilha e relatório, coleta de dados de site que não tem API, integração entre sistemas que não conversam, agente de IA atendendo no WhatsApp, no e-mail ou no Telegram.
 
-No dia a dia eu trabalho com vibe coding: uso IA para chegar rápido na primeira versão, testar hipóteses e explorar bibliotecas que eu ainda não conhecia. O que eu não terceirizo é o julgamento — decidir o que entra, ler o que voltou, tratar o erro, escrever o teste e assumir a manutenção. Protótipo em uma tarde é fácil; o que entrega valor é o que continua de pé três meses depois.
+Comecei em 2024, entre projetos próprios e freelances. Aprendi resolvendo problema real: peguei a tarefa chata, automatizei, publiquei, e a próxima ficou mais fácil. Quase tudo que está no meu GitHub nasceu de uma necessidade concreta.
 
-Me interessa o resultado, não a ferramenta da moda: menos clique, menos erro de digitação, menos gente esperando resposta. Se o problema pede Python, uso Python. Se pede n8n, uso n8n. Se pede um script de 40 linhas e não um sistema, é isso que eu entrego.
+No dia a dia eu trabalho com vibe coding. Uso IA para chegar rápido na primeira versão, testar hipóteses e explorar bibliotecas que eu ainda não conhecia. O que eu não terceirizo é o julgamento: decidir o que entra, ler o que voltou, tratar o erro, escrever o teste e assumir a manutenção. Protótipo em uma tarde é fácil. O que entrega valor é o que continua de pé três meses depois.
 
-Aberto a freelance e a conversar sobre automação, dados e agentes de IA.
+Me interessa o resultado, não a ferramenta da moda. Menos clique, menos erro de digitação, menos gente esperando resposta. Se o problema pede Python, uso Python. Se pede n8n, uso n8n. Se pede um script de 40 linhas e não um sistema, é isso que eu entrego.
 
 ---
 
